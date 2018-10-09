@@ -74,9 +74,14 @@ const deleteQuirk = function(user, trait /*as string*/) {
   delete user[trait];
 };
 
-export const API = {
-  A41,
-  banishQuirk,
-  bestowQuirks,
-  deleteQuirk
-};
+window.A41 = A41;
+window.banishQuirk = banishQuirk;
+window.bestowQuirks = bestowQuirks;
+window.deleteQuirk = deleteQuirk;
+
+// export const API = {
+//   A41,
+//   banishQuirk,
+//   bestowQuirks,
+//   deleteQuirk
+// };
